@@ -1,0 +1,136 @@
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and(max-width: 1275px) {
+  //FOOTER WRAP
+  .footer_wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  //LEFT FOOTER
+  .left_footer {
+    margin-bottom: rem(30px);
+  }
+  //FOOTER SOCIAL
+  .footer_social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  //MADE
+  .madeIn {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    p {
+      margin: 0 rem(10px) rem(15px) 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  //LEFT FOOTER
+  .left_footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 0;
+    text-align: center;
+  }
+  //FOOTER NAV
+  .footer_nav {
+    margin: 0 0 rem(30px) 0;
+  }
+  //FOOTER CONTACTS
+  .footer_contacts {
+    margin: 0 0 rem(30px) 0;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  //FOOTER IMG
+  .footer_img {
+    margin-bottom: rem(30px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  //FOOTER CLOCK
+  .footer_clock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .clock {
+    margin-right: 0;
+  }
+  //CLOCK ELEMENT
+  .clock_element {
+    margin-bottom: rem(30px);
+    li {
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+    }
+  }
+  .second {
+    left: rem(8px);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  //FOOTER SOCIAL
+  .footer_social {
+    a {
+      font-size: rem(25px);
+      margin-right: rem(15px);
+    }
+  }
+  //CLOCK ELEMENT
+  .clock_element {
+    li {
+      width: rem(40px);
+      height: rem(40px);
+      font-size: rem(18px);
+      &:last-child {
+        width: rem(200px);
+        left: rem(20px);
+      }
+    }
+  }
+  .clock {
+    font-size: rem(40px);
+  }
+  .second {
+    left: 0;
+    li {
+      &:last-child {
+        width: rem(55px);
+      }
+    }
+  }
+  //MADE IN
+  .madeIn {
+    p {
+      font-size: rem(14px);
+    }
+    a {
+      font-size: rem(14px);
+    }
+  }
+}
